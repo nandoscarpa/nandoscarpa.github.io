@@ -19,7 +19,7 @@ html.dark {
  }
 
 html.dark {
-    background-image: url('/background.webp') ;
+    background-image: url('./background.webp') ;
   /* background-color: #111; */
   color: var(--primary-color);
 }

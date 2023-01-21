@@ -5,8 +5,8 @@ const timeEl = document.querySelector('.time')
 const dateEl = document.querySelector('.date')
 const toggle = document.querySelector('.toggle')
 
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const days = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+const months = ["Jan", "Fev", "Mar", "Abr", "Mai", "Jun", "Jul", "Ago", "Set", "Out", "Nov", "Dez"];
 
 toggle.addEventListener('click', (e) => {
     const html = document.querySelector('html')
@@ -15,7 +15,7 @@ toggle.addEventListener('click', (e) => {
         e.target.innerHTML = 'Dark mode'
     } else {
         html.classList.add('dark')
-        e.target.innerHTML = 'Light mode'
+        e.target.innerHTML = 'Modo Light'
     }
 })
 
@@ -35,7 +35,7 @@ function setTime() {
     secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 60, 0, 360)}deg)`
 
     timeEl.innerHTML = `${hoursForClock}:${minutes < 10 ? `0${minutes}` : minutes} ${ampm}`
-    dateEl.innerHTML = `${days[day]}, ${months[month]} <span class="circle">${date}</span>`
+    dateEl.innerHTML = `${days[day]}, <span class="circle">${date}</span> de ${months[month]}`
 }
 
 // StackOverflow https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers

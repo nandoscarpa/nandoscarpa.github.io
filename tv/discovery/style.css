@@ -1,0 +1,73 @@
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: black;
+}
+
+#container {
+    width: 900px;
+    margin: 30px auto;
+    background: #263238;
+    padding-top: 20px;   
+}
+
+H2 {
+    margin: -20px auto;   
+    padding: 05px;  
+    color: #fff;
+}
+
+/***** Barra de Navegação 
+  **/
+.navegacao {
+    height: 70px;
+    margin: auto;
+    padding: 2px;
+    background-color: #263238;
+    text-align: center;     
+    background-size: 1.5rem;    
+}
+.navegacao a {
+    color: #fff;      
+}
+
+.navegacao a:hover {
+    color: #12b8c7;
+}
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topo ul {
+    margin-top: 15px;
+    background: #b10333;
+    float: left;
+}
+
+#topo ul li {
+    float: left;
+}
+
+#topo ul a {
+    font-size: 0.9em;
+    display: block;
+    padding: 0.5em 1.1em;
+    line-height: 1.8em;
+    text-decoration: none;
+    color: #fff;
+    background: url(../imagens/divisor.png) no-repeat left center;
+}
+
+#topo ul .primeiro a {
+    background: none;    
+}
+
+#topo ul a:hover {
+    color: #69001d;
+}
+
+h1 {
+    text-decoration-color: #fff ;
+}
